@@ -155,7 +155,7 @@ const productData = await page.evaluate(() => {
 - **Functional Programming**: Uses a functional approach with TypeScript for better testability
 - **Asynchronous Processing**: Non-blocking job processing with RabbitMQ
 - **Error Handling**: Robust error handling with message acknowledgment
-- **Scalability**: Can be scaled horizontally by running multiple consumers
+- **Scalability**: Can be scaled horizontally by running multiple consumers, via tools like PM2, Docker, or Kubernetes.
 - **Configurability**: Uses configuration values from index.ts
 
 ## Testing
