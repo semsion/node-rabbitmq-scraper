@@ -60,7 +60,10 @@ sudo systemctl status rabbitmq-server
 3. Set up environment variables:
    ```bash
    cp .env.example .env
+   
+   # The example values can be used for testing
    ```
+   
 
 ## Running the Application
 
