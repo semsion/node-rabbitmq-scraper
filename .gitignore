@@ -1,3 +1,38 @@
+# node_modules
 node_modules
+
+# .history files 
 .history
+
+
+# build output
+dist/
+
+# Logs
+*.log
+npm-debug.log*
+yarn-error.log*
+
+# Coverage
+coverage/
+.nyc_output/
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache
+.npm/
+
+# dotenv files
 .env
+.env.*
+!.env.example
+
+# OS & editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Puppeteer/Webdriver artifacts (if any)
+.cache/
