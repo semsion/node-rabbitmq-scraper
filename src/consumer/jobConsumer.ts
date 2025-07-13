@@ -18,7 +18,17 @@ async function scrapeUrls(bookingId: string, urls: string[]): Promise<ScrapingRe
   
   const browser = await puppeteer.launch({
     headless: true,
-    args: ['--no-sandbox', '--disable-setuid-sandbox']
+
+    // TODO: This may need to be adjusted based on your environment, and for compliance with security policies
+    // Use the following args to reduce detection and improve performance
+    args: [
+      '--no-sandbox',
+      '--disable-setuid-sandbox',
+      '--disable-web-security',
+      '--disable-features=IsolateOrigins,site-per-process',
+      '--disable-http2' // Disable HTTP/2 protocol
+    ],
+    ignoreHTTPSErrors: true
   });
   
   try {

@@ -9,6 +9,7 @@ const PORT = process.env.PORT || 3000;
 
 // Initialize RabbitMQ connection and channels
 let jobProducer: { sendJob: (bookingId: string, urls: string[]) => Promise<any> } | undefined;
+
 let jobConsumer: { consume: (queueName: string) => Promise<void> } | undefined;
 
 interface JobRequest {
